@@ -63,12 +63,40 @@
       </section>
     </header>
     <main>
-      <section class="backdrop is-hidden" data-modal>  
+      <section class="backdrop is-hidden" data-modal>
         <form action="" class="modal-form is-hidden" data-modal>
-          <button type="button" class="close-button" data-modal-close>x</button>
+          <h2>Deje sus datos, nos contactaremos con usted</h2>
+          <label>
+            Nombre
+            <input type="text" name="name"  />
+          </label>
+          <label>
+            Telefono
+            <input type="tel" name="phone" />
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" />
+          </label>
+          <label class="comments-box">
+            Comentarios
+            <input type="text" name="comments" />
+          </label>
+          <label>
+            <input type="checkbox" name="agreement" value="yes" />
+            Estoy de acuerdo con el boletín informativo y acepto los Términos y
+            Condiciones
+          </label>
+
+          <button type="button" class="close-button" data-modal-close>
+            <svg class="icon" width="11" height="11">
+              <use href="./images/icons.svg#exit" title="close button"></use>
+            </svg>
+          </button>
+          <button type="button" class="send-form">Enviar</button>
         </form>
       </section>
-      
+
       <section class="hero">
         <div class="hero-container">
           <div class="container">
@@ -440,6 +468,6 @@
         </div>
       </address>
     </footer>
-  <script src="./modal.js"></script>
-</body>
+    <script src="./modal.js"></script>
+  </body>
 </html>
