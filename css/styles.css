@@ -436,7 +436,8 @@ span.tel-mail {
   height: 581px;
   position: relative;
   opacity: 0;
-  text-align: center;
+  padding-left: 41px;
+  padding-right: 39px;
   transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 2s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -446,20 +447,58 @@ span.tel-mail {
 
 
 .backdrop .modal-form label {
- display: flex;
- flex-direction: column;
- margin:0 41px;
  padding-top: 10px;
  text-align: left;
 }
 
-.backdrop .modal-form label input {
+.backdrop .modal-form .normal-box .input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+  display: block;
+  height: 40px;
   margin-top: 4px;
-  padding-top: 40px;
+  outline: none;
+  padding-left: 40px;
+  width: 100%;
 }
-.backdrop .modal-form .comments-box input {
-  padding-top: 120px;
+
+.backdrop .modal-form .comments-box .input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+  
+  display: block;
+  height: 120px;
+  margin-top: 4px;
+  outline: none;
+  overflow-wrap: break-word;
+  width: 100%;
 }
+
+.backdrop .modal-form .normal-box .input:hover,
+.backdrop .modal-form .comments-box .input:hover,
+.backdrop .modal-form .comments-box .input:focus,
+.backdrop .modal-form .normal-box .input:focus {
+  border: 1px solid #2196F3;
+}
+
+.backdrop .modal-form .normal-box .input:hover + .icon-form,
+.backdrop .modal-form .comments-box .input:hover + .icon-form,
+.backdrop .modal-form .comments-box .input:focus + .icon-form,
+.backdrop .modal-form .normal-box .input:focus + .icon-form {
+  fill: #2196F3;
+}
+
+.backdrop .modal-form label .pos-relative-icons {
+  position: relative;
+
+}
+
+.backdrop .modal-form label .pos-relative-icons .icon-form {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+}
+
 
 .close-button {
   cursor: pointer;
@@ -505,6 +544,8 @@ span.tel-mail {
   padding: 10px 75px;
   text-align: center;
 }
+
+
 /**---portafolio web-----**/
 
 .container-menu {
