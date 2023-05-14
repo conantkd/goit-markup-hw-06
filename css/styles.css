@@ -430,7 +430,7 @@ span.tel-mail {
 .backdrop .modal-form {
   background-color: var(--banner-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   width: 528px;
   height: 581px;
@@ -438,39 +438,40 @@ span.tel-mail {
   opacity: 0;
   padding-left: 41px;
   padding-right: 39px;
-  transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 2s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 2s,
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop .modal-form.is-hidden {
   opacity: 1;
 }
 
-
 .backdrop .modal-form label {
- padding-top: 10px;
- text-align: left;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  text-align: left;
 }
 
 .backdrop .modal-form .normal-box .input {
   border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
+  border-radius: 4px;
   display: block;
   height: 40px;
   margin-top: 4px;
   outline: none;
+  margin-bottom: 10px;
   padding-left: 40px;
   width: 100%;
 }
 
 .backdrop .modal-form .comments-box .input {
   border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-  
+  border-radius: 4px;
   display: block;
   height: 120px;
   margin-top: 4px;
+  margin-bottom: 20px;
   outline: none;
-  overflow-wrap: break-word;
   width: 100%;
 }
 
@@ -478,19 +479,18 @@ border-radius: 4px;
 .backdrop .modal-form .comments-box .input:hover,
 .backdrop .modal-form .comments-box .input:focus,
 .backdrop .modal-form .normal-box .input:focus {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
 }
 
 .backdrop .modal-form .normal-box .input:hover + .icon-form,
 .backdrop .modal-form .comments-box .input:hover + .icon-form,
 .backdrop .modal-form .comments-box .input:focus + .icon-form,
 .backdrop .modal-form .normal-box .input:focus + .icon-form {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 .backdrop .modal-form label .pos-relative-icons {
   position: relative;
-
 }
 
 .backdrop .modal-form label .pos-relative-icons .icon-form {
@@ -499,6 +499,41 @@ border-radius: 4px;
   left: 12px;
 }
 
+.backdrop .modal-form label .check-box-text {
+  margin-left: 16px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.backdrop .modal-form label .check-box-text input {
+  width: 15px;
+  height: 16px;}
+
+.backdrop .modal-form label .check-icon{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.backdrop .modal-form input.check-box:checked ~ .check-icon {
+  display: inline;
+}
+
+.backdrop .modal-form label span {
+  display: inline-block;
+  color: #757575;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  padding-bottom: 4px;
+  position: absolute;
+  left: 19px;
+  top: -4px;
+
+}
 
 .close-button {
   cursor: pointer;
@@ -524,27 +559,27 @@ border-radius: 4px;
 
 .backdrop .modal-form h2 {
   text-align: center;
-  font-size:20px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.17em;
-  padding:38.5px 0 12px 0;
+  padding: 38.5px 0 12px 0;
 }
 
-.backdrop .modal-form .send-form{
+.backdrop .modal-form .send-form {
   border: none;
   border-radius: 4px;
   background-color: var(--link-color);
+  display: block;
   color: var(--banner-color);
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.875em;
-  margin: 5px 0 41px;
   padding: 10px 75px;
   text-align: center;
+  margin: 20px 124px;
 }
-
 
 /**---portafolio web-----**/
 
