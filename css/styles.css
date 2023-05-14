@@ -469,8 +469,8 @@ span.tel-mail {
   border-radius: 4px;
   display: block;
   height: 120px;
-  margin-top: 4px;
-  margin-bottom: 20px;
+  margin: 4px 0 20px 0;
+  padding: 12px 0 0 16px;
   outline: none;
   width: 100%;
 }
