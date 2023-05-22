@@ -66,7 +66,7 @@
       <section class="backdrop is-hidden" data-modal>
         <form action="" class="modal-form is-hidden" data-modal>
           <h2>Deje sus datos, nos contactaremos con usted</h2>
-          <label class="normal-box" for="input-name">
+          <label  for="input-name">
             Nombre</label>
             <div class="pos-relative-icons">
               <input class="input" type="text" name="name" id="input-name" />
@@ -75,7 +75,7 @@
               </svg>
             </div>
           
-          <label class="normal-box">
+          <label >
             Telefono</label>
             <div class="pos-relative-icons">
               <input class="input" type="tel" name="phone" />
@@ -84,7 +84,7 @@
               </svg>
             </div>
           
-          <label class="normal-box">
+          <label >
             E-mail</label>
             <div class="pos-relative-icons">
               <input class="input" type="email" name="email" />
@@ -93,14 +93,12 @@
               </svg>
             </div>
           
-          <label class="comments-box">
+          <label>
             Comentarios</label>
             <textarea
-              class="input"
+              class="input comments-box"
               name="comments"
               placeholder="Introduzca el texto"></textarea>
-          
-    
             <div class="check-box-text">
               <input
                 class="input check-box"
@@ -496,7 +494,7 @@
           </ul>
           <div class="landing-footer-form">
             <strong>SUSCRÍBASE AL BOLETÍN INFORMATIVO</strong>
-            <form>
+            <form><label hidden>SUSCRIBE</label>
                 <input type="email" name="email" placeholder="Correo electrónico" />
               <button type="submit">
                 Suscríbase
